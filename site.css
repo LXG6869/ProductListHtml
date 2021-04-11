@@ -183,7 +183,8 @@ a {
 }
 
 li:hover {
-    background-color: #eff5f5;
+    background-color:#F8F8F8;
+    /*#eff5f5*/
 }
 .default-border {
     border: 1px slategray solid;
