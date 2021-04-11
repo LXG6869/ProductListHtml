@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product List Page</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="site.css" rel="stylesheet" />
+
+<body>
+
+    <div class="grid-container-header">
+        <div class="logo-company">
+            <img src="./pic/logo2.PNG" alt="company logo">
+        </div>
+        <div class="logo-product">
+            <img src="./pic/logo.PNG" alt="product logo" style="width: 15vw;">
+        </div>
+        <div class="header-navi" style="padding-top:10px;font-weight: bold;">
+            <a href="#dashboard" class="display-inline">Dashboard</a>/
+            <a href="#product" class="display-inline">Produkt</a>
+        </div>
+        <div class="header-button">
+            <span>User Name</span>
+            <div class="notification">
+                <button class="no-style">
+                    <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="notification">
+                <button class="no-style">
+                    <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="notification">
+                <button class="no-style">
+                    <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
+                </button>
+                <span class="badge badge-red">3</span>
+            </div>
+            <div class="notification">
+                <button class="no-style">
+                    <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
+                </button>
+                <span class="badge badge-orange">2</span>
+            </div>
+            <div class="dropdown notification">
+                <button class="no-style">
+                    <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container-body">
+        <div class="customer-border-top customer-border-bottom">
+            <ul class="test-ul">
+                <li>
+                    <a href="#" id="dashboard">
+                        <i class="fa fa-dashboard fa-2x" aria-hidden="true"></i>
+                        <br />
+                        <span style="font-size: 11px;">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="product">
+                        <i class="fa fa-clipboard fa-2x" aria-hidden="true"></i>
+                        <br />
+                        <span style="font-size: 11px;">Produkte</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="import">
+                        <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+                        <br />
+                        <span style="font-size: 11px;">Import</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="export">
+                        <i class="fa fa-upload fa-2x" aria-hidden="true"></i>
+                        <br />
+                        <span style="font-size: 11px;">Export</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="setting">
+                        <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+                        <br />
+                        <span style="font-size: 11px;">Einstellung</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="system">
+                        <i class="fa fa-sliders fa-2x" aria-hidden="true"></i>
+                        <br />
+                        <span style="font-size: 11px;">System</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="connect">
+
+                        <div style="text-align: center;">
+                            <img src="./pic/Product_pic/cloud-connector.PNG" alt="p_c" width="50" height="50">
+                        </div>
+                        <span style="font-size: 11px;">Verbindung</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="default-border">
+            <div style="width: 100%;">
+                <span style="font-size: 16px;">Filter</span>
+                <button type="submit" class="test-button" style="float: right;">
+                    <i class="fa fa-plus fa-1x"></i>
+                </button>
+            </div>
+            <div style="width: 100%;">
+                <input type="text" id="textInput" class="input-without-border"  name="textInput" style="width: 100%;"
+                    placeholder="KATEGORIEN">
+            </div>
+            <div style="width: 100%;">
+                <ul class="test-ul">
+                    <li>
+                        <a href="#" style="text-align: left !important;">
+                            <span style="font-size: 11px;">Alle</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div
+                style="width: 100%; min-height:5vh;border-top:1px slategray solid; border-bottom: 1px slategray solid;">
+                <div class="grid-container-small">
+
+                    <div style="text-align: center;">
+                        <i class="fa fa-edit fa-lg"></i>
+                        <br />
+                        <span style="font-size: 16px;">Produkte</span>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-search fa-lg"></i>
+                        <input class="input-without-border" style="font-size: 18px;" type="text" placeholder="Suchen...">
+                    </div>
+
+                    <div></div>
+
+                    <div style="padding-top: 5px; text-align: right;" >
+                        <select>
+                            <option value="0">Standard Ansicht</option>
+                            <option value="1">Standard Ansicht2</option>
+                            <option value="2">Produkt Ansicht</option>
+                            <option value="3">Produkt Ansicht2</option>
+                        </select>
+                        <select>
+                            <option value="0">Speed4Trade</option>
+                            <option value="1">Speed4Trade2</option>
+                            <option value="3">Speed4Trade3</option>
+                            <option value="3">Speed4Trade4</option>
+                        </select>
+                        <button class="no-style" type="submit">
+                            <i class="fa fa-plus fa-lg"></i>
+                        </button>
+                        <span style="font-size: 16px;">
+                            Hinzufügen</span>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div style="min-height: 75vh;">
+                <table class="hoverTable">
+                    <thead>
+                        <tr>
+                            <th class="leftTextAlogn" colspan="1">
+                                <span> Bild</span>
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Identifizierer
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Status
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Vollständigkeit
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Vorlage
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Anbieter
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Produktname
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Geändert am
+                            </th>
+                            <th class="leftTextAlogn" colspan="1">
+                                Erzeugt am
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:60px !important ;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/notfound.png" alt="p1" style="display:block;"
+                                        width="100%" height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                number
+                            </td>
+                            <td>
+                                <div class="chip chip-red" style="max-width: 120px;">
+                                    <i class="fa fa-columns"><span style="color: #f32a3b;">Deaktiviert</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                        <tr style="height:70px !important;">
+                            <td>
+                                <div style="max-width: 50px !important;">
+                                    <img src="./pic/Product_pic/p1.jpg" alt="p1" style="display:block;" width="100%"
+                                        height="100%">
+                                </div>
+                            </td>
+                            <td>
+                                <span>4030996255319</span>
+                            </td>
+                            <td>
+                                <div class="chip chip-green" style="max-width: 120px;">
+                                    <i class="fa fa-bookmark-o"><span style="color: #0ff06d;">Veröffentlicht</span>
+                                    </i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="chip chip-orange" style="float: left;">
+                                    87</div>
+                            </td>
+                            <td>
+                                <span>Einfaches Produkte</span>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span>WDT Phsphor oral 500ml</span>
+                            </td>
+
+                            <td>
+                                <span>05.03.2021</span>
+                            </td>
+                            <td>
+                                <span>20.01.2020</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="height: 60px !important; border-top: 1px black solid;">
+                            <td colspan="8">
+                                <div class="pagination">
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i> </a> </a>
+                                    <a href="#" class="active">1</a>
+                                    <a class="active" href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">...</a>
+                                    <a href="#">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                                    <a href="#">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <span>Einträge</span>
+                                <span>1-10</span>
+                                <span>of</span>
+                                <span>10899</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

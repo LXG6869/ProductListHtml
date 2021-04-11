@@ -1,0 +1,204 @@
+/* ----------css start---------- */
+
+.logo-company {
+    width: 10%;
+    float: left;
+}
+
+.logo-product {
+    width: 25%;
+    float: left;
+}
+
+.header-navi {
+    width: 25%;
+    text-align: left;
+}
+
+.header-button {
+    width: 100%;
+    text-align: right;
+}
+
+/*#region badge informations by icon*/
+.notification {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    display: inline-block;
+}
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 3px;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: white;
+}
+.badge-red {
+    background-color: red;
+}
+.badge-orange {
+    background-color: orange;
+}
+/*#endregion*/
+
+/*#region try using pic by icon*/
+.icon-image {
+    width: 36px;
+    height: 36px;
+    background: url(./pic/Product_pic/cloud-connector.PNG)
+}
+/*#region*/
+
+/*#region pagination for table*/
+.pagination {
+    display: inline-block;
+}
+.pagination a {
+    color: black;
+    float: left;
+    background-color: rgb(250, 251, 251);
+    padding: 8px 16px;
+    margin-right: 1px;
+    border: 1px black solid;
+    text-decoration: none;
+}
+/*#region*/
+
+/*#region  status- informations showed in table with diff. colors*/
+.chip {
+    padding: 0 12px;
+    height: 25px;
+    min-width: 50px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.chip-green {
+    background-color: #a9f7c9;
+}
+.chip-red {
+    background-color: #f8cfe0;
+}
+.chip-orange {
+    background-color: rgb(248, 194, 174);
+}
+/*#region*/
+
+/*#region  table -hover*/
+.hoverTable {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    border-spacing: 10px;
+    table-layout: fixed;
+    empty-cells: show;
+}
+.hoverTable>tbody>tr:hover {
+    background-color: rgb(245, 243, 243);
+}
+/*#region*/
+
+
+/*#region  grid layout in page*/
+.grid-container-header {
+    display: grid;
+    grid-gap: 2px;
+    background-color: #ffffff;
+    font-size: 12px;
+    grid-template-columns: 5% 15% 50% 30%;
+}
+.grid-container-body {
+    display: grid;
+    grid-gap: 2px;
+    background-color: #ffffff;
+    font-size: 12px;
+    grid-template-columns: 5% 15% 80%;
+}
+.grid-container-small {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 5% 25% 15% 50% 5%;
+}
+/*#region*/
+
+/*#region  dropdown list*/
+select {
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(./pic/arrow_down.png) 96% / 15% no-repeat #ffffff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*#region*/
+
+.no-style {
+    border: none;
+    background-color: #f5fafa;
+}
+.leftTextAlogn {
+    text-align: left;
+}
+.test-button {
+    border: none;
+}
+a {
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center
+}
+
+.test-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.test-ul li {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #eff5f5;
+}
+.default-border {
+    border: 1px slategray solid;
+}
+
+.customer-border-top, .customer-border-bottom {
+    border-top: 1px slategray solid;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.input-without-border {
+    outline: none;
+    border: none;
+}
+
