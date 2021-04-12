@@ -132,8 +132,9 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(./pic/arrow_down.png) 96% / 15% no-repeat #ffffff;
+    background: url(./pic/arrow_down_new.png) 96% / 15% no-repeat #d6d5d5;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -187,11 +188,11 @@ li:hover {
     /*#eff5f5*/
 }
 .default-border {
-    border: 1px slategray solid;
+    border: 1px rgb(228, 229, 230) solid;
 }
 
 .customer-border-top, .customer-border-bottom {
-    border-top: 1px slategray solid;
+    border-top: 1px #bdbdbe solid;
 }
 
 .display-inline {
