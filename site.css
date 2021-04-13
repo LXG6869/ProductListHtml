@@ -163,7 +163,7 @@ select {
 .leftTextAlogn {
     text-align: left;
 }
-.test-button {
+.filter-button {
     border: none;
 }
 a {
@@ -173,19 +173,18 @@ a {
     text-align: center
 }
 
-.test-ul {
+.filter-ul {
     list-style-type: none;
     padding: 0;
     margin: 0
 }
 
-.test-ul li {
-    border-bottom: none;
+.filter-ul li {
+        border-bottom: none;
 }
 
 li:hover {
     background-color:#F8F8F8;
-    /*#eff5f5*/
 }
 .default-border {
     border: 1px rgb(228, 229, 230) solid;
