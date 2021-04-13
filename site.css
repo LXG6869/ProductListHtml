@@ -88,7 +88,7 @@
 
 /*#region  table -hover*/
 .hoverTable {
-    border-collapse: collapse;
+   border-collapse: collapse;
     width: 100%;
     height: auto;
     border-spacing: 10px;
